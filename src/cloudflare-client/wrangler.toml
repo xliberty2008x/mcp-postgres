@@ -1,0 +1,17 @@
+name = "postgres-mcp-client"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+MCP_SERVER_URL = "http://localhost:3000"
+
+# Add any additional environment variables your Worker needs here
+
+# To use secrets, uncomment the following lines and add your secrets
+# [secrets]
+# DB_PASSWORD
+# API_KEY
+
+[[routes]]
+pattern = "postgres-mcp-client.example.com/*"
+zone_name = "example.com"
